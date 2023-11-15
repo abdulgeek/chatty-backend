@@ -1,0 +1,75 @@
+{
+  message: '❌ Error: bad auth : Authentication failed.',
+  level: 'error',
+  timestamp: '2023-11-15 03:46:49.197 PM'
+}
+{
+  message: '❌ Error: bad auth : Authentication failed.',
+  level: 'error',
+  timestamp: '2023-11-15 03:47:11.623 PM'
+}
+{
+  message: '❌ Error: bad auth : Authentication failed.',
+  level: 'error',
+  timestamp: '2023-11-15 03:47:16.237 PM'
+}
+{
+  message: '❌ Error: bad auth : Authentication failed.',
+  level: 'error',
+  timestamp: '2023-11-15 03:47:31.996 PM'
+}
+{
+  message: '❌ Error: bad auth : Authentication failed.',
+  level: 'error',
+  timestamp: '2023-11-15 03:47:40.126 PM'
+}
+{
+  message: '❌ Error: bad auth : Authentication failed.',
+  level: 'error',
+  timestamp: '2023-11-15 03:47:54.262 PM'
+}
+{
+  message: '❌ Error: URI contained empty userinfo section',
+  level: 'error',
+  timestamp: '2023-11-15 03:48:18.591 PM'
+}
+{
+  message: '❌ Error: URI contained empty userinfo section',
+  level: 'error',
+  timestamp: '2023-11-15 03:48:19.994 PM'
+}
+{
+  message: '❌ Error: URI contained empty userinfo section',
+  level: 'error',
+  timestamp: '2023-11-15 03:48:45.865 PM'
+}
+{
+  message: 'Failed to start the server due to an error: AggregateError',
+  level: 'error',
+  timestamp: '2023-11-15 05:16:47.324 PM'
+}
+{
+  message: 'Failed to start the server due to an error: AggregateError',
+  level: 'error',
+  timestamp: '2023-11-15 05:18:09.282 PM'
+}
+{
+  message: 'Failed to start the server due to an error: AggregateError',
+  level: 'error',
+  timestamp: '2023-11-15 05:21:26.952 PM'
+}
+{
+  message: 'Failed to start the server due to an error: AggregateError',
+  level: 'error',
+  timestamp: '2023-11-15 05:21:52.566 PM'
+}
+{
+  message: 'Failed to start the server due to an error: AggregateError',
+  level: 'error',
+  timestamp: '2023-11-15 05:23:12.761 PM'
+}
+{
+  message: 'Failed to start the server due to an error: AggregateError',
+  level: 'error',
+  timestamp: '2023-11-15 05:23:27.422 PM'
+}
