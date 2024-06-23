@@ -6,10 +6,15 @@ import Logging from "@service/logger/logging";
 export const dbConnect = () => {
   const connect = async () => {
     try {
-      await mongoose.connect(config.DATABASE_URL as string);
-      Logging.info("Successfully connected to database.");
+      const mongooseOptions = {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        serverSelectionTimeoutMS: 5000
+      };
+      await mongoose.connect(config.DATABASE_URL as string, mongooseOptions);
+      Logging.info("Successfully connected to MongoDB database 🫙  🚀.");
       await redisConnection.connect();
-      Logging.info("Redis connection established successfully.");
+      Logging.info("Successfully connected to Redis database 🫙  🚀.");
     } catch (error: any) {
       Logging.error(`Error connecting to database: ${error.message}`);
       process.exit(1);

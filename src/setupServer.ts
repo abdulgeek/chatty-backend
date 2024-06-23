@@ -61,6 +61,21 @@ export class ChattyServer {
     app.use(compression());
     app.use(json({ limit: "50mb" }));
     app.use(urlencoded({ extended: true, limit: "50mb" }));
+    app.use((req, res, next) => {
+      /** Log the req */
+      Logging.info(
+        `Incoming - METHOD: [${req.method}] - URL: [${req.url}] - IP: [${req.socket.remoteAddress}]`
+      );
+
+      res.on("finish", () => {
+        /** Log the res */
+        Logging.info(
+          `Result - METHOD: [${req.method}] - URL: [${req.url}] - IP: [${req.socket.remoteAddress}] - STATUS: [${res.statusCode}]`
+        );
+      });
+
+      next();
+    });
   }
 
   private routesMiddleware(app: Application): void {
@@ -87,6 +102,7 @@ export class ChattyServer {
       const socketIO: Server = await this.createSocketIO(httpServer);
       this.startHttpServer(httpServer);
       this.socketIOConnections(socketIO);
+
     } catch (error: any) {
       console.log(error);
       Logging.error(`error: ${error || error.message}`);

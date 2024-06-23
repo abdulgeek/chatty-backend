@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import cloudinary from "cloudinary";
 
-dotenv.config({});
+dotenv.config();
 
 class Config {
   public DATABASE_URL: string | undefined;
@@ -49,6 +49,7 @@ class Config {
   }
 
   public cloudinaryConfig(): void {
+
     cloudinary.v2.config({
       cloud_name: this.CLOUD_NAME,
       api_key: this.CLOUD_API_KEY,
