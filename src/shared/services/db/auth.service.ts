@@ -3,11 +3,20 @@ import AuthModel from "@auth/models/auth.model";
 import { Helpers } from "@global/helpers/helper";
 
 class AuthService {
+
+  public async createAuthUser(data: IAuthDocument): Promise<void> {
+    await AuthModel.create(data);
+  }
+
   public async getUserByUsernameOrEmail(username: string, email: string): Promise<IAuthDocument | null> {
     const user = await AuthModel.findOne({ $or: [{ username }, { email: Helpers.lowerCase(email) }] }).exec();
     return user;
   }
 
+  public async getAuthUserByUsername(username: string): Promise<IAuthDocument> {
+    const user: IAuthDocument = (await AuthModel.findOne({ username: Helpers.firstLetterUppercase(username) }).exec()) as IAuthDocument;
+    return user;
+  }
 }
 
 export const authService: AuthService = new AuthService();

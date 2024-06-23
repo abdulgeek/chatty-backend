@@ -31,18 +31,23 @@ export abstract class BaseQueue {
     systemLogs.info(`Queue ${queueName} created`);
     Logging.info(`Queue ${queueName} created`);
 
-    this.queue.on('global:completed', (job: Job) => {
-      systemLogs.info(`Job ${job.name} completed`);
-      Logging.info(`Job ${job.name} completed`);
-    })
 
-    this.queue.on('global:stalled', (job: Job) => {
-      systemLogs.info(`Job ${job.name} stalled`);
-      Logging.info(`Job ${job.name} stalled`);
-    })
+    this.queue.on('completed', (job: Job) => {
+      job.remove();
+    });
+
+    this.queue.on('global:completed', (jobId: string) => {
+      systemLogs.info(`Job ${jobId} completed`);
+      Logging.info(`Job ${jobId} completed`);
+    });
+
+    this.queue.on('global:stalled', (jobId: string) => {
+      systemLogs.info(`Job ${jobId} is stalled`);
+      Logging.info(`Job ${jobId} is stalled`);
+    });
   }
 
-  protected addJob(name: string, data: any): void {
+  protected addJob(name: string, data: IBaseJobData): void {
     this.queue.add(name, data, { attempts: 3, backoff: { type: 'fixed', delay: 5000 } });
   }
 

@@ -1,4 +1,8 @@
-import { SignUp } from '@auth/controllers/auth.controller';
+import { CurrentUser } from '@auth/controllers/current.controller';
+import { SignIn } from '@auth/controllers/signin.controller';
+import { SignOut } from '@auth/controllers/signout.controller';
+import { SignUp } from '@auth/controllers/signup.controller';
+import { authMiddleware } from '@global/helpers/auth-middleware';
 import express, { Router } from 'express';
 
 class AuthRoutes {
@@ -10,6 +14,9 @@ class AuthRoutes {
 
   public routes(): Router {
     this.router.post('/signup', SignUp.prototype.create)
+    this.router.post('/signin', SignIn.prototype.read)
+    this.router.get('/signout', SignOut.prototype.update)
+    this.router.get('/current-user', authMiddleware.verifyUser, authMiddleware.checkAuthentication, CurrentUser.prototype.read);
     return this.router;
   }
 }

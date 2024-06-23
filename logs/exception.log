@@ -4524,3 +4524,2592 @@
   ],
   timestamp: '2024-06-23 12:52:41.506 PM'
 }
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 2.
+  
+  [7m7[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);
+  [7m [0m [91m         ~~~~~~~~~~[0m
+  
+    [96msrc/shared/services/queues/base.queue.ts[0m:[93m49[0m:[93m59[0m
+      [7m49[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {
+      [7m  [0m [96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+      An argument for 'callback' was not provided.
+  [96msrc/shared/services/queues/auth.queue.ts[0m:[93m7[0m:[93m40[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authWorker'.
+  
+  [7m7[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);
+  [7m [0m [91m                                       ~~~~~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 3 arguments, but got 2.\n' +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96msrc/shared/services/queues/base.queue.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m59\x1B[0m\n' +
+    '    \x1B[7m49\x1B[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'callback' was not provided.\n" +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'authWorker'.\n" +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m                                       ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 3 arguments, but got 2.\n' +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96msrc/shared/services/queues/base.queue.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m59\x1B[0m\n' +
+    '    \x1B[7m49\x1B[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'callback' was not provided.\n" +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'authWorker'.\n" +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m                                       ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 3 arguments, but got 2.\n' +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96msrc/shared/services/queues/base.queue.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m59\x1B[0m\n' +
+    '    \x1B[7m49\x1B[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'callback' was not provided.\n" +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'authWorker'.\n" +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m                                       ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 22:54:49 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15936,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 493780992,
+      heapTotal: 360480768,
+      heapUsed: 335343576,
+      external: 23553282,
+      arrayBuffers: 20632916
+    }
+  },
+  os: {
+    loadavg: [ 4.35205078125, 4.0400390625, 3.13427734375 ],
+    uptime: 39206
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 10:54:49.079 PM'
+}
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 2.
+  
+  [7m7[0m     this.processJob('addAuthUserToDB', 5);
+  [7m [0m [91m         ~~~~~~~~~~[0m
+  
+    [96msrc/shared/services/queues/base.queue.ts[0m:[93m49[0m:[93m59[0m
+      [7m49[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {
+      [7m  [0m [96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+      An argument for 'callback' was not provided.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 3 arguments, but got 2.\n' +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', 5);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96msrc/shared/services/queues/base.queue.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m59\x1B[0m\n' +
+    '    \x1B[7m49\x1B[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'callback' was not provided.\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 3 arguments, but got 2.\n' +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', 5);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96msrc/shared/services/queues/base.queue.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m59\x1B[0m\n' +
+    '    \x1B[7m49\x1B[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'callback' was not provided.\n" +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 3 arguments, but got 2.\n' +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', 5);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96msrc/shared/services/queues/base.queue.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m59\x1B[0m\n' +
+    '    \x1B[7m49\x1B[0m   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'callback' was not provided.\n" +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 22:55:07 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15987,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 500088832,
+      heapTotal: 360480768,
+      heapUsed: 327200400,
+      external: 23652768,
+      arrayBuffers: 20732402
+    }
+  },
+  os: {
+    loadavg: [ 4.39208984375, 4.0556640625, 3.15966796875 ],
+    uptime: 39224
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 10:55:07.288 PM'
+}
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m7[0m:[93m43[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authWorker'.
+  
+  [7m7[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);
+  [7m [0m [91m                                          ~~~~~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'authWorker'.\n" +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m                                          ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'authWorker'.\n" +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m                                          ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m7\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'authWorker'.\n" +
+    '\n' +
+    "\x1B[7m7\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m                                          ~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 22:55:41 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16041,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 511524864,
+      heapTotal: 361791488,
+      heapUsed: 328948160,
+      external: 23675471,
+      arrayBuffers: 20742607
+    }
+  },
+  os: {
+    loadavg: [ 3.82421875, 3.95263671875, 3.15771484375 ],
+    uptime: 39258
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 10:55:41.177 PM'
+}
+{
+  error: [96msrc/shared/workers/auth.worker.ts[0m:[93m16[0m:[93m7[0m - [91merror[0m[90m TS2339: [0mProperty 'Logging' does not exist on type 'Logger'.
+  
+  [7m16[0m       Logging.info('Adding auth user to DB');
+  [7m  [0m [91m      ~~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/workers/auth.worker.ts\x1B[0m:\x1B[93m16\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'Logging' does not exist on type 'Logger'.\n" +
+    '\n' +
+    "\x1B[7m16\x1B[0m       Logging.info('Adding auth user to DB');\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m      ~~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/workers/auth.worker.ts\x1B[0m:\x1B[93m16\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'Logging' does not exist on type 'Logger'.\n" +
+    '\n' +
+    "\x1B[7m16\x1B[0m       Logging.info('Adding auth user to DB');\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m      ~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/workers/auth.worker.ts\x1B[0m:\x1B[93m16\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'Logging' does not exist on type 'Logger'.\n" +
+    '\n' +
+    "\x1B[7m16\x1B[0m       Logging.info('Adding auth user to DB');\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m      ~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 22:57:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16773,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 514064384,
+      heapTotal: 369115136,
+      heapUsed: 334535792,
+      external: 23734691,
+      arrayBuffers: 20806133
+    }
+  },
+  os: {
+    loadavg: [ 6.64013671875, 4.671875, 3.52685546875 ],
+    uptime: 39379
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 10:57:42.695 PM'
+}
+{
+  error: [96msrc/shared/workers/auth.worker.ts[0m:[93m15[0m:[93m18[0m - [91merror[0m[90m TS2555: [0mExpected at least 1 arguments, but got 0.
+  
+  [7m15[0m       systemLogs.info()
+  [7m  [0m [91m                 ~~~~[0m
+  
+    [96mnode_modules/winston/index.d.ts[0m:[93m90[0m:[93m6[0m
+      [7m90[0m     (message: string, ...meta: any[]): Logger;
+      [7m  [0m [96m     ~~~~~~~~~~~~~~~[0m
+      An argument for 'message' was not provided.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/workers/auth.worker.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m18\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2555: \x1B[0mExpected at least 1 arguments, but got 0.\n' +
+    '\n' +
+    '\x1B[7m15\x1B[0m       systemLogs.info()\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                 ~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96mnode_modules/winston/index.d.ts\x1B[0m:\x1B[93m90\x1B[0m:\x1B[93m6\x1B[0m\n' +
+    '    \x1B[7m90\x1B[0m     (message: string, ...meta: any[]): Logger;\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m     ~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'message' was not provided.\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/workers/auth.worker.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m18\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2555: \x1B[0mExpected at least 1 arguments, but got 0.\n' +
+    '\n' +
+    '\x1B[7m15\x1B[0m       systemLogs.info()\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                 ~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96mnode_modules/winston/index.d.ts\x1B[0m:\x1B[93m90\x1B[0m:\x1B[93m6\x1B[0m\n' +
+    '    \x1B[7m90\x1B[0m     (message: string, ...meta: any[]): Logger;\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m     ~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'message' was not provided.\n" +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/shared/workers/auth.worker.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m18\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2555: \x1B[0mExpected at least 1 arguments, but got 0.\n' +
+    '\n' +
+    '\x1B[7m15\x1B[0m       systemLogs.info()\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                 ~~~~\x1B[0m\n' +
+    '\n' +
+    '  \x1B[96mnode_modules/winston/index.d.ts\x1B[0m:\x1B[93m90\x1B[0m:\x1B[93m6\x1B[0m\n' +
+    '    \x1B[7m90\x1B[0m     (message: string, ...meta: any[]): Logger;\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m     ~~~~~~~~~~~~~~~\x1B[0m\n' +
+    "    An argument for 'message' was not provided.\n" +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 22:57:45 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16882,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 507772928,
+      heapTotal: 366231552,
+      heapUsed: 335069776,
+      external: 23699946,
+      arrayBuffers: 20779580
+    }
+  },
+  os: {
+    loadavg: [ 6.64013671875, 4.671875, 3.52685546875 ],
+    uptime: 39382
+  },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 10:57:45.051 PM'
+}
+{
+  error: TypeError: Cannot read properties of undefined (reading 'getRouter')
+      at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)
+      at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)
+      at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)
+      at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)
+      at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)
+      at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12),
+  level: 'error',
+  message: "uncaughtException: Cannot read properties of undefined (reading 'getRouter')\n" +
+    "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  stack: "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:25:28 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 23078,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 505856000,
+      heapTotal: 369115136,
+      heapUsed: 334581032,
+      external: 23609624,
+      arrayBuffers: 20678742
+    }
+  },
+  os: {
+    loadavg: [ 2.17138671875, 1.775390625, 2.13330078125 ],
+    uptime: 41045
+  },
+  trace: [
+    {
+      column: 38,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'routes',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'exports.default',
+      line: 13,
+      method: 'default',
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.routesMiddleware',
+      line: 82,
+      method: 'routesMiddleware',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.start',
+      line: 34,
+      method: 'start',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: 'Application.initialize',
+      line: 12,
+      method: 'initialize',
+      native: false
+    },
+    {
+      column: 13,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: null,
+      line: 22,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:25:28.941 PM'
+}
+{
+  error: TypeError: Cannot read properties of undefined (reading 'getRouter')
+      at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)
+      at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)
+      at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)
+      at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)
+      at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)
+      at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12),
+  level: 'error',
+  message: "uncaughtException: Cannot read properties of undefined (reading 'getRouter')\n" +
+    "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  stack: "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:25:47 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 23165,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 511148032,
+      heapTotal: 367542272,
+      heapUsed: 334742120,
+      external: 23683204,
+      arrayBuffers: 20752322
+    }
+  },
+  os: { loadavg: [ 2.83642578125, 1.951171875, 2.1875 ], uptime: 41064 },
+  trace: [
+    {
+      column: 38,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'routes',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'exports.default',
+      line: 13,
+      method: 'default',
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.routesMiddleware',
+      line: 82,
+      method: 'routesMiddleware',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.start',
+      line: 34,
+      method: 'start',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: 'Application.initialize',
+      line: 12,
+      method: 'initialize',
+      native: false
+    },
+    {
+      column: 13,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: null,
+      line: 22,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:25:47.109 PM'
+}
+{
+  error: TypeError: Cannot read properties of undefined (reading 'getRouter')
+      at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)
+      at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)
+      at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)
+      at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)
+      at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)
+      at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12),
+  level: 'error',
+  message: "uncaughtException: Cannot read properties of undefined (reading 'getRouter')\n" +
+    "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  stack: "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:25:57 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 23337,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 510951424,
+      heapTotal: 368066560,
+      heapUsed: 337361200,
+      external: 23731069,
+      arrayBuffers: 20800187
+    }
+  },
+  os: {
+    loadavg: [ 3.10107421875, 2.03515625, 2.2138671875 ],
+    uptime: 41074
+  },
+  trace: [
+    {
+      column: 38,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'routes',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'exports.default',
+      line: 13,
+      method: 'default',
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.routesMiddleware',
+      line: 82,
+      method: 'routesMiddleware',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.start',
+      line: 34,
+      method: 'start',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: 'Application.initialize',
+      line: 12,
+      method: 'initialize',
+      native: false
+    },
+    {
+      column: 13,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: null,
+      line: 22,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:25:57.783 PM'
+}
+{
+  error: TypeError: Cannot read properties of undefined (reading 'getRouter')
+      at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)
+      at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)
+      at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)
+      at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)
+      at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)
+      at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12),
+  level: 'error',
+  message: "uncaughtException: Cannot read properties of undefined (reading 'getRouter')\n" +
+    "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  stack: "TypeError: Cannot read properties of undefined (reading 'getRouter')\n" +
+    '    at routes (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:9:38)\n' +
+    '    at exports.default (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts:13:3)\n' +
+    '    at ChattyServer.routesMiddleware (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:82:22)\n' +
+    '    at ChattyServer.start (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts:34:10)\n' +
+    '    at Application.initialize (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:12:12)\n' +
+    '    at Object.<anonymous> (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts:22:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:26:29 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 23420,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 505626624,
+      heapTotal: 366493696,
+      heapUsed: 338058432,
+      external: 23712728,
+      arrayBuffers: 20781846
+    }
+  },
+  os: {
+    loadavg: [ 3.19140625, 2.15771484375, 2.251953125 ],
+    uptime: 41106
+  },
+  trace: [
+    {
+      column: 38,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'routes',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/route.ts',
+      function: 'exports.default',
+      line: 13,
+      method: 'default',
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.routesMiddleware',
+      line: 82,
+      method: 'routesMiddleware',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/setupServer.ts',
+      function: 'ChattyServer.start',
+      line: 34,
+      method: 'start',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: 'Application.initialize',
+      line: 12,
+      method: 'initialize',
+      native: false
+    },
+    {
+      column: 13,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts',
+      function: null,
+      line: 22,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:26:29.036 PM'
+}
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m8[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'processJob' does not exist on type 'AuthQueue'.
+  
+  [7m8[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);
+  [7m [0m [91m         ~~~~~~~~~~[0m
+  [96msrc/shared/services/queues/auth.queue.ts[0m:[93m11[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'addJob' does not exist on type 'AuthQueue'.
+  
+  [7m11[0m     this.addJob(name, data);
+  [7m  [0m [91m         ~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:33:48 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24526,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 501284864,
+      heapTotal: 361529344,
+      heapUsed: 326950808,
+      external: 23627039,
+      arrayBuffers: 20694175
+    }
+  },
+  os: {
+    loadavg: [ 2.7158203125, 3.06787109375, 2.76904296875 ],
+    uptime: 41545
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:33:48.947 PM'
+}
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m8[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'processJob' does not exist on type 'AuthQueue'.
+  
+  [7m8[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);
+  [7m [0m [91m         ~~~~~~~~~~[0m
+  [96msrc/shared/services/queues/auth.queue.ts[0m:[93m11[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'addJob' does not exist on type 'AuthQueue'.
+  
+  [7m11[0m     this.addJob(name, data);
+  [7m  [0m [91m         ~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:33:58 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24568,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 499580928,
+      heapTotal: 361791488,
+      heapUsed: 330526968,
+      external: 23660481,
+      arrayBuffers: 20740115
+    }
+  },
+  os: {
+    loadavg: [ 2.53173828125, 3.015625, 2.75341796875 ],
+    uptime: 41555
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:33:58.954 PM'
+}
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m8[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'processJob' does not exist on type 'AuthQueue'.
+  
+  [7m8[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);
+  [7m [0m [91m         ~~~~~~~~~~[0m
+  [96msrc/shared/services/queues/auth.queue.ts[0m:[93m11[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'addJob' does not exist on type 'AuthQueue'.
+  
+  [7m11[0m     this.addJob(name, data);
+  [7m  [0m [91m         ~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:34:02 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24613,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 503726080,
+      heapTotal: 360742912,
+      heapUsed: 330329936,
+      external: 23651428,
+      arrayBuffers: 20731062
+    }
+  },
+  os: {
+    loadavg: [ 2.48876953125, 2.99853515625, 2.74853515625 ],
+    uptime: 41559
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:34:02.264 PM'
+}
+{
+  error: [96msrc/shared/services/queues/auth.queue.ts[0m:[93m8[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'processJob' does not exist on type 'AuthQueue'.
+  
+  [7m8[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);
+  [7m [0m [91m         ~~~~~~~~~~[0m
+  [96msrc/shared/services/queues/auth.queue.ts[0m:[93m11[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'addJob' does not exist on type 'AuthQueue'.
+  
+  [7m11[0m     this.addJob(name, data);
+  [7m  [0m [91m         ~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m8\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'processJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    "\x1B[7m8\x1B[0m     this.processJob('addAuthUserToDB', 5, authWorker.addAuthUserToDB);\n" +
+    '\x1B[7m \x1B[0m \x1B[91m         ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/queues/auth.queue.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addJob' does not exist on type 'AuthQueue'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m     this.addJob(name, data);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:34:05 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24684,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 506544128,
+      heapTotal: 362053632,
+      heapUsed: 326382392,
+      external: 23643335,
+      arrayBuffers: 20710471
+    }
+  },
+  os: {
+    loadavg: [ 2.48876953125, 2.99853515625, 2.74853515625 ],
+    uptime: 41562
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:34:05.493 PM'
+}
+{
+  error: [96msrc/shared/workers/user.worker.ts[0m:[93m12[0m:[93m7[0m - [91merror[0m[90m TS2304: [0mCannot find name 'cl'.
+  
+  [7m12[0m       cl
+  [7m  [0m [91m      ~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/workers/user.worker.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'cl'.\n" +
+    '\n' +
+    '\x1B[7m12\x1B[0m       cl\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m      ~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/workers/user.worker.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'cl'.\n" +
+    '\n' +
+    '\x1B[7m12\x1B[0m       cl\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m      ~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/workers/user.worker.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'cl'.\n" +
+    '\n' +
+    '\x1B[7m12\x1B[0m       cl\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m      ~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:36:16 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 25059,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 506953728,
+      heapTotal: 365707264,
+      heapUsed: 337217520,
+      external: 23660656,
+      arrayBuffers: 20740290
+    }
+  },
+  os: {
+    loadavg: [ 2.7734375, 3.05419921875, 2.81103515625 ],
+    uptime: 41693
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:36:16.722 PM'
+}
+{
+  error: [96msrc/shared/services/db/user.service.ts[0m:[93m11[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'mongoose'.
+  
+  [7m11[0m       { $match: { authId: new mongoose.Types.ObjectId(authId) } },
+  [7m  [0m [91m                              ~~~~~~~~[0m
+  [96msrc/shared/services/db/user.service.ts[0m:[93m14[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'aggregateProject' does not exist on type 'UserService'.
+  
+  [7m14[0m       { $project: this.aggregateProject() }
+  [7m  [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m31\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'mongoose'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m       { $match: { authId: new mongoose.Types.ObjectId(authId) } },\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                              ~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m14\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'aggregateProject' does not exist on type 'UserService'.\n" +
+    '\n' +
+    '\x1B[7m14\x1B[0m       { $project: this.aggregateProject() }\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m31\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'mongoose'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m       { $match: { authId: new mongoose.Types.ObjectId(authId) } },\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                              ~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m14\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'aggregateProject' does not exist on type 'UserService'.\n" +
+    '\n' +
+    '\x1B[7m14\x1B[0m       { $project: this.aggregateProject() }\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m11\x1B[0m:\x1B[93m31\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'mongoose'.\n" +
+    '\n' +
+    '\x1B[7m11\x1B[0m       { $match: { authId: new mongoose.Types.ObjectId(authId) } },\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                              ~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m14\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'aggregateProject' does not exist on type 'UserService'.\n" +
+    '\n' +
+    '\x1B[7m14\x1B[0m       { $project: this.aggregateProject() }\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:59:31 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 28990,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 515375104,
+      heapTotal: 370688000,
+      heapUsed: 338023048,
+      external: 24901055,
+      arrayBuffers: 21972497
+    }
+  },
+  os: {
+    loadavg: [ 2.59521484375, 2.37158203125, 2.505859375 ],
+    uptime: 43088
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:59:31.866 PM'
+}
+{
+  error: [96msrc/shared/services/db/user.service.ts[0m:[93m15[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'aggregateProject' does not exist on type 'UserService'.
+  
+  [7m15[0m       { $project: this.aggregateProject() }
+  [7m  [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'aggregateProject' does not exist on type 'UserService'.\n" +
+    '\n' +
+    '\x1B[7m15\x1B[0m       { $project: this.aggregateProject() }\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'aggregateProject' does not exist on type 'UserService'.\n" +
+    '\n' +
+    '\x1B[7m15\x1B[0m       { $project: this.aggregateProject() }\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/shared/services/db/user.service.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'aggregateProject' does not exist on type 'UserService'.\n" +
+    '\n' +
+    '\x1B[7m15\x1B[0m       { $project: this.aggregateProject() }\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~~~~~~~~~~~~~~~~\x1B[0m\n' +
+    '\n' +
+    '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
+    '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
+    '    at getOutput (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1077:36)\n' +
+    '    at Object.compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1433:41)\n' +
+    '    at Module.m._compile (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sun Jun 23 2024 23:59:38 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29037,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.1',
+    argv: [
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/.bin/ts-node',
+      '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
+    ],
+    memoryUsage: {
+      rss: 522518528,
+      heapTotal: 370163712,
+      heapUsed: 335528720,
+      external: 23651554,
+      arrayBuffers: 20722996
+    }
+  },
+  os: {
+    loadavg: [ 3.42822265625, 2.5478515625, 2.56689453125 ],
+    uptime: 43095
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-06-23 11:59:38.291 PM'
+}

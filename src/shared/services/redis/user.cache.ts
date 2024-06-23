@@ -3,6 +3,10 @@ import { BaseCache } from "./base.cache";
 import { systemLogs } from "@service/logger/logger";
 import { ServerError } from "@global/helpers/error-handler";
 import Logging from "@service/logger/logging";
+import { Helpers } from "@global/helpers/helper";
+import { RedisCommandRawReply } from '@redis/client/dist/lib/commands';
+
+type UserCacheMultiType = string | number | Buffer | RedisCommandRawReply[] | IUserDocument | IUserDocument[];
 
 export class UserCache extends BaseCache {
 
@@ -69,6 +73,76 @@ export class UserCache extends BaseCache {
       }
     } catch (error) {
       systemLogs.error(error);
+      Logging.error(error);
+      throw new ServerError('Server error. Try again.');
+    }
+  }
+
+  public async getUserFromCache(userId: string): Promise<IUserDocument | null> {
+    try {
+      if (!this.client.isOpen) {
+        await this.client.connect();
+      }
+
+      const response: IUserDocument = (await this.client.HGETALL(`users:${userId}`)) as unknown as IUserDocument;
+      response.createdAt = new Date(Helpers.parseJson(`${response.createdAt}`));
+      response.postsCount = Helpers.parseJson(`${response.postsCount}`);
+      response.blocked = Helpers.parseJson(`${response.blocked}`);
+      response.blockedBy = Helpers.parseJson(`${response.blockedBy}`);
+      response.notifications = Helpers.parseJson(`${response.notifications}`);
+      response.social = Helpers.parseJson(`${response.social}`);
+      response.followersCount = Helpers.parseJson(`${response.followersCount}`);
+      response.followingCount = Helpers.parseJson(`${response.followingCount}`);
+      response.bgImageId = Helpers.parseJson(`${response.bgImageId}`);
+      response.bgImageVersion = Helpers.parseJson(`${response.bgImageVersion}`);
+      response.profilePicture = Helpers.parseJson(`${response.profilePicture}`);
+      response.work = Helpers.parseJson(`${response.work}`);
+      response.school = Helpers.parseJson(`${response.school}`);
+      response.location = Helpers.parseJson(`${response.location}`);
+      response.quote = Helpers.parseJson(`${response.quote}`);
+
+      return response;
+    } catch (error) {
+      Logging.error(error);
+      throw new ServerError('Server error. Try again.');
+    }
+  }
+
+  public async getUsersFromCache(start: number, end: number, excludedUserKey: string): Promise<IUserDocument[]> {
+    try {
+      if (!this.client.isOpen) {
+        await this.client.connect();
+      }
+      const response: string[] = await this.client.ZRANGE('user', start, end, { REV: true });
+      const multi: ReturnType<typeof this.client.multi> = this.client.multi();
+      for (const key of response) {
+        if (key !== excludedUserKey) {
+          multi.HGETALL(`users:${key}`);
+        }
+      }
+      const replies: UserCacheMultiType = (await multi.exec()) as UserCacheMultiType;
+      const userReplies: IUserDocument[] = [];
+      for (const reply of replies as IUserDocument[]) {
+        reply.createdAt = new Date(Helpers.parseJson(`${reply.createdAt}`));
+        reply.postsCount = Helpers.parseJson(`${reply.postsCount}`);
+        reply.blocked = Helpers.parseJson(`${reply.blocked}`);
+        reply.blockedBy = Helpers.parseJson(`${reply.blockedBy}`);
+        reply.notifications = Helpers.parseJson(`${reply.notifications}`);
+        reply.social = Helpers.parseJson(`${reply.social}`);
+        reply.followersCount = Helpers.parseJson(`${reply.followersCount}`);
+        reply.followingCount = Helpers.parseJson(`${reply.followingCount}`);
+        reply.bgImageId = Helpers.parseJson(`${reply.bgImageId}`);
+        reply.bgImageVersion = Helpers.parseJson(`${reply.bgImageVersion}`);
+        reply.profilePicture = Helpers.parseJson(`${reply.profilePicture}`);
+        reply.work = Helpers.parseJson(`${reply.work}`);
+        reply.school = Helpers.parseJson(`${reply.school}`);
+        reply.location = Helpers.parseJson(`${reply.location}`);
+        reply.quote = Helpers.parseJson(`${reply.quote}`);
+
+        userReplies.push(reply);
+      }
+      return userReplies;
+    } catch (error) {
       Logging.error(error);
       throw new ServerError('Server error. Try again.');
     }
