@@ -8,14 +8,17 @@ import { loginSchema } from '@auth/schemas/signin';
 import { IAuthDocument } from '@auth/interfaces/auth.interface';
 import { BadRequestError } from '@global/helpers/error-handler';
 import { userService } from '@service/db/user.service';
-import { IUserDocument } from '@user/interfaces/user.interface';
+import { IResetPasswordParams, IUserDocument } from '@user/interfaces/user.interface';
+import { emailQueue } from '@service/queues/email.queue';
+import moment from 'moment';
+import { resetPasswordTemplate } from '@service/emails/reset-password/reset-password-template';
+import requestIp from 'request-ip';
 
 export class SignIn {
   @joiValidation(loginSchema)
   public async read(req: Request, res: Response): Promise<void> {
     const { username, password } = req.body;
     const existingUser: IAuthDocument = await authService.getAuthUserByUsername(username);
-    console.log("existingUser", existingUser);
     if (!existingUser) {
       throw new BadRequestError('Invalid credentials');
     }
@@ -27,7 +30,6 @@ export class SignIn {
 
     const user: IUserDocument | null = await userService.getUserByAuthId(`${existingUser._id}`);
     if (!user) {
-      console.log("User not found for authId:", existingUser._id);
       throw new BadRequestError('User not found');
     }
 
@@ -41,6 +43,28 @@ export class SignIn {
       },
       config.JWT_TOKEN!
     );
+
+    let ipaddress: string | undefined;
+    try {
+      ipaddress = requestIp.getClientIp(req) ?? undefined;
+    } catch (error) {
+      console.error("Failed to retrieve IP address:", error);
+    }
+
+    const templateParams: IResetPasswordParams = {
+      username: existingUser.username,
+      email: existingUser.email ?? '',
+      ipaddress: ipaddress ?? 'Unavailable',
+      date: moment().format('DD/MM/YYYY HH:mm')
+    };
+
+    const template: string = resetPasswordTemplate.passwordResetConfirmationTemplate(templateParams);
+    
+    emailQueue.addEmailJob('forgetPasswordEmail', {
+      template,
+      receiverEmail: 'katherine.douglas@ethereal.email',
+      subject: 'Password Reset'
+    });
     req.session = { jwt: userJwt };
     const userDocument: IUserDocument = {
       ...user,

@@ -3,10 +3,11 @@
 # dependencies
 /node_modules
 /.pnp
-/logs/*
+./logs/*
 dump.rdb
 .pnp.js
 build
+
 # testing
 /coverage
 
