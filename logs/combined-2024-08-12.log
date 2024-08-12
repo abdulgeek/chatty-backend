@@ -1,0 +1,1091 @@
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:36.838 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:36.964 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:37.046 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:37.050 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:37.050 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:37.143 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.623 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.741 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.809 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.813 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.813 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.899 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.920 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.925 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.927 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.934 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.938 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:54.943 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:12:57.568 PM'
+}
+{
+  message: 'Job 20 completed',
+  level: 'info',
+  timestamp: '2024-08-12 08:13:19.351 PM'
+}
+{
+  message: 'Job 21 completed',
+  level: 'info',
+  timestamp: '2024-08-12 08:16:11.225 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:41.980 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.103 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.171 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.175 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.175 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.309 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.330 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.335 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.338 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.344 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.349 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:42.354 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:18:44.722 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.172 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.315 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.386 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.389 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.390 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.479 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.501 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.506 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.508 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.516 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.521 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:47.528 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:19:49.726 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:07.801 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:07.914 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:07.980 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:07.984 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:07.984 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.076 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.097 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.103 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.105 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.112 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.116 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:08.122 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:10.212 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:18.920 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.033 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.100 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.103 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.104 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.191 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.213 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.218 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.220 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.226 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.231 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:19.237 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:21.561 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.644 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.758 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.824 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.827 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.828 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.917 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.938 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.943 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.945 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.953 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.957 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:32.963 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:35.172 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:55.754 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:55.899 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:55.982 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:55.986 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:55.987 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.089 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.113 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.122 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.124 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.132 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.137 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:56.144 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:20:58.199 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:06.645 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:06.778 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:06.859 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:06.864 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:06.865 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:06.983 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:07.012 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:07.018 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:07.022 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:07.031 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:07.037 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:07.043 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:09.154 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:20.849 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.037 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.121 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.127 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.128 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.230 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.258 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.263 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.266 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.274 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.281 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:21.288 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:23.709 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.548 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.717 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.803 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.807 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.808 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.904 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.928 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.938 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.940 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.949 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.954 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:39.961 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:21:42.146 PM'
+}
+{
+  message: 'Job 22 completed',
+  level: 'info',
+  timestamp: '2024-08-12 08:22:48.959 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.601 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.745 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.828 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.833 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.833 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.936 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.960 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.967 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.970 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.977 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.983 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:21.990 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:23:24.336 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.015 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.212 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.294 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.298 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.298 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.398 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.423 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.430 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.433 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.440 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.445 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:16.452 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:27:18.952 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:18.981 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.126 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.208 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.212 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.212 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.323 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.352 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.358 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.360 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.370 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.376 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:19.384 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:30:21.562 PM'
+}
+{
+  message: 'Job 1 completed',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:03.905 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.490 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.642 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.721 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.725 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.726 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.828 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.853 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.858 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.860 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.868 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.874 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:38.885 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 08:31:40.986 PM'
+}
+{ level: 'error', timestamp: '2024-08-12 10:23:22.163 PM' }
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.613 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.733 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.809 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.814 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.815 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.913 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.936 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.940 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.942 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.953 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.958 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:39.964 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 11:02:42.501 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.018 PM'
+}
+{
+  message: 'Queue email created',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.136 PM'
+}
+{
+  message: 'Queue auth created',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.202 PM'
+}
+{
+  message: 'Queue user created',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.205 PM'
+}
+{
+  message: 'userCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.205 PM'
+}
+{
+  message: 'Queue posts created',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.295 PM'
+}
+{
+  message: 'Queue images created',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.315 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.320 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.321 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.328 PM'
+}
+{
+  message: 'postCache',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.332 PM'
+}
+{
+  message: 'redisConnection',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:08.337 PM'
+}
+{
+  message: 'PONG',
+  level: 'info',
+  timestamp: '2024-08-12 11:11:10.819 PM'
+}

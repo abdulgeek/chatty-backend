@@ -55,5 +55,4 @@ export abstract class BaseQueue {
   protected processJob(name: string, concurrency: number, callback: Queue.ProcessCallbackFunction<void>): void {
     this.queue.process(name, concurrency, callback);
   }
-
 }

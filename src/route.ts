@@ -1,4 +1,5 @@
 import { authRoutes } from "@auth/routes/auth.route";
+import { postRoutes } from "@post/routes/post.route";
 import { serverAdapter } from "@service/queues/base.queue";
 import { Application } from "express";
 
@@ -8,6 +9,7 @@ export default (app: Application) => {
   const routes = () => {
     app.use('/queues', serverAdapter.getRouter())
     app.use(BASE_PATH, authRoutes.routes())
+    app.use(BASE_PATH, postRoutes.routes())
   };
 
   routes();

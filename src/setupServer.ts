@@ -16,6 +16,7 @@ import { createAdapter } from "@socket.io/redis-adapter";
 import { Server } from "socket.io";
 import { CustomError, IErrorResponse } from "@global/helpers/error-handler";
 import applicationRoutes from "@root/route";
+import { SocketIOPostHandler } from "@socket/post";
 
 dotenv.config();
 
@@ -130,5 +131,8 @@ export class ChattyServer {
     });
   }
 
-  private socketIOConnections(io: Server): void { }
+  private socketIOConnections(io: Server): void {
+    const postSocketHandler = new SocketIOPostHandler(io);
+    postSocketHandler.listen();
+  }
 }

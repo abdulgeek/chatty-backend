@@ -1,24 +1,57 @@
 {
-  error: [96msrc/features/auth/controllers/signin.controller.ts[0m:[93m15[0m:[93m23[0m - [91merror[0m[90m TS7016: [0mCould not find a declaration file for module 'request-ip'. '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/request-ip/lib/index.js' implicitly has an 'any' type.
-    Try `npm i --save-dev @types/request-ip` if it exists or add a new declaration (.d.ts) file containing `declare module 'request-ip';`
+  error: [96msrc/shared/services/db/image.service.ts[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ImageModel'.
   
-  [7m15[0m import requestIp from 'request-ip';
-  [7m  [0m [91m                      ~~~~~~~~~~~~[0m
+  [7m17[0m     await ImageModel.create({
+  [7m  [0m [91m          ~~~~~~~~~~[0m
+  [96msrc/shared/services/db/image.service.ts[0m:[93m27[0m:[93m11[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ImageModel'.
+  
+  [7m27[0m     await ImageModel.deleteOne({ _id: imageId }).exec();
+  [7m  [0m [91m          ~~~~~~~~~~[0m
+  [96msrc/shared/services/db/image.service.ts[0m:[93m31[0m:[93m46[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ImageModel'.
+  
+  [7m31[0m     const image: IFileImageDocument = (await ImageModel.findOne({ bgImageId }).exec()) as IFileImageDocument;
+  [7m  [0m [91m                                             ~~~~~~~~~~[0m
+  [96msrc/shared/services/db/image.service.ts[0m:[93m36[0m:[93m48[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ImageModel'.
+  
+  [7m36[0m     const images: IFileImageDocument[] = await ImageModel.aggregate([{ $match: { userId: new mongoose.Types.ObjectId(userId) } }]);
+  [7m  [0m [91m                                               ~~~~~~~~~~[0m
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/features/auth/controllers/signin.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS7016: \x1B[0mCould not find a declaration file for module 'request-ip'. '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/request-ip/lib/index.js' implicitly has an 'any' type.\n" +
-    "  Try `npm i --save-dev @types/request-ip` if it exists or add a new declaration (.d.ts) file containing `declare module 'request-ip';`\n" +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m17\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
     '\n' +
-    "\x1B[7m15\x1B[0m import requestIp from 'request-ip';\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                      ~~~~~~~~~~~~\x1B[0m\n' +
+    '\x1B[7m17\x1B[0m     await ImageModel.create({\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m          ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m27\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m27\x1B[0m     await ImageModel.deleteOne({ _id: imageId }).exec();\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m          ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m31\x1B[0m:\x1B[93m46\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m31\x1B[0m     const image: IFileImageDocument = (await ImageModel.findOne({ bgImageId }).exec()) as IFileImageDocument;\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                                             ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m36\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m36\x1B[0m     const images: IFileImageDocument[] = await ImageModel.aggregate([{ $match: { userId: new mongoose.Types.ObjectId(userId) } }]);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~~~~~~~~\x1B[0m\n' +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/features/auth/controllers/signin.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS7016: \x1B[0mCould not find a declaration file for module 'request-ip'. '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/request-ip/lib/index.js' implicitly has an 'any' type.\n" +
-    "  Try `npm i --save-dev @types/request-ip` if it exists or add a new declaration (.d.ts) file containing `declare module 'request-ip';`\n" +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m17\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
     '\n' +
-    "\x1B[7m15\x1B[0m import requestIp from 'request-ip';\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                      ~~~~~~~~~~~~\x1B[0m\n' +
+    '\x1B[7m17\x1B[0m     await ImageModel.create({\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m          ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m27\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m27\x1B[0m     await ImageModel.deleteOne({ _id: imageId }).exec();\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m          ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m31\x1B[0m:\x1B[93m46\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m31\x1B[0m     const image: IFileImageDocument = (await ImageModel.findOne({ bgImageId }).exec()) as IFileImageDocument;\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                                             ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m36\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m36\x1B[0m     const images: IFileImageDocument[] = await ImageModel.aggregate([{ $match: { userId: new mongoose.Types.ObjectId(userId) } }]);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~~~~~~~~\x1B[0m\n' +
     '\n' +
     '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
     '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
@@ -31,11 +64,22 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/features/auth/controllers/signin.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS7016: \x1B[0mCould not find a declaration file for module 'request-ip'. '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/request-ip/lib/index.js' implicitly has an 'any' type.\n" +
-    "  Try `npm i --save-dev @types/request-ip` if it exists or add a new declaration (.d.ts) file containing `declare module 'request-ip';`\n" +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m17\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
     '\n' +
-    "\x1B[7m15\x1B[0m import requestIp from 'request-ip';\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                      ~~~~~~~~~~~~\x1B[0m\n' +
+    '\x1B[7m17\x1B[0m     await ImageModel.create({\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m          ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m27\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m27\x1B[0m     await ImageModel.deleteOne({ _id: imageId }).exec();\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m          ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m31\x1B[0m:\x1B[93m46\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m31\x1B[0m     const image: IFileImageDocument = (await ImageModel.findOne({ bgImageId }).exec()) as IFileImageDocument;\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                                             ~~~~~~~~~~\x1B[0m\n' +
+    "\x1B[96msrc/shared/services/db/image.service.ts\x1B[0m:\x1B[93m36\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ImageModel'.\n" +
+    '\n' +
+    '\x1B[7m36\x1B[0m     const images: IFileImageDocument[] = await ImageModel.aggregate([{ $match: { userId: new mongoose.Types.ObjectId(userId) } }]);\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~~~~~~~~\x1B[0m\n' +
     '\n' +
     '    at createTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:859:12)\n' +
     '    at reportTSError (/Users/abdulsagheer/Desktop/Chatty/chatty-backend/node_modules/ts-node/src/index.ts:863:19)\n' +
@@ -48,9 +92,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   exception: true,
-  date: 'Sat Jul 13 2024 19:44:28 GMT+0530 (India Standard Time)',
+  date: 'Mon Aug 12 2024 20:12:37 GMT+0530 (India Standard Time)',
   process: {
-    pid: 35972,
+    pid: 11776,
     uid: 501,
     gid: 20,
     cwd: '/Users/abdulsagheer/Desktop/Chatty/chatty-backend',
@@ -61,16 +105,16 @@
       '/Users/abdulsagheer/Desktop/Chatty/chatty-backend/src/server.ts'
     ],
     memoryUsage: {
-      rss: 497860608,
-      heapTotal: 360218624,
-      heapUsed: 327202536,
-      external: 23614941,
-      arrayBuffers: 20694575
+      rss: 566083584,
+      heapTotal: 416186368,
+      heapUsed: 380121904,
+      external: 24571442,
+      arrayBuffers: 20774955
     }
   },
   os: {
-    loadavg: [ 5.232421875, 4.1201171875, 3.90869140625 ],
-    uptime: 31371
+    loadavg: [ 2.53955078125, 2.7568359375, 2.74462890625 ],
+    uptime: 36398
   },
   trace: [
     {
@@ -154,5 +198,5 @@
       native: false
     }
   ],
-  timestamp: '2024-07-13 07:44:28.957 PM'
+  timestamp: '2024-08-12 08:12:37.162 PM'
 }
