@@ -1,16 +1,17 @@
 import { BaseCache } from '@service/redis/base.cache';
+import Logger from 'bunyan';
+import { config } from '@root/config';
 import { ServerError } from '@global/helpers/error-handler';
 import { ISavePostToCache, IPostDocument } from '@post/interfaces/post.interface';
-import { Helpers } from '@global/helpers/helper';
+import { Helpers } from '@global/helpers/helpers';
 import { RedisCommandRawReply } from '@redis/client/dist/lib/commands';
 import { IReactions } from '@reaction/interfaces/reaction.interface';
-import Logging from '@service/logger/logging';
 
+const log: Logger = config.createLogger('postCache');
 
 export type PostCacheMultiType = string | number | Buffer | RedisCommandRawReply[] | IPostDocument | IPostDocument[];
 
 export class PostCache extends BaseCache {
-
   constructor() {
     super('postCache');
   }
@@ -67,14 +68,14 @@ export class PostCache extends BaseCache {
       const postCount: string[] = await this.client.HMGET(`users:${currentUserId}`, 'postsCount');
       const multi: ReturnType<typeof this.client.multi> = this.client.multi();
       await this.client.ZADD('post', { score: parseInt(uId, 10), value: `${key}` });
-      for (const [itemKey, itemValue] of Object.entries(dataToSave)) {
+      for(const [itemKey, itemValue] of Object.entries(dataToSave)) {
         multi.HSET(`posts:${key}`, `${itemKey}`, `${itemValue}`);
       }
       const count: number = parseInt(postCount[0], 10) + 1;
       multi.HSET(`users:${currentUserId}`, 'postsCount', count);
       multi.exec();
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -101,7 +102,7 @@ export class PostCache extends BaseCache {
 
       return postReplies;
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -114,7 +115,7 @@ export class PostCache extends BaseCache {
       const count: number = await this.client.ZCARD('post');
       return count;
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -142,7 +143,7 @@ export class PostCache extends BaseCache {
       }
       return postWithImages;
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -170,7 +171,7 @@ export class PostCache extends BaseCache {
       }
       return postWithVideos;
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -196,7 +197,7 @@ export class PostCache extends BaseCache {
       }
       return postReplies;
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -209,7 +210,7 @@ export class PostCache extends BaseCache {
       const count: number = await this.client.ZCOUNT('post', uId, uId);
       return count;
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -229,7 +230,7 @@ export class PostCache extends BaseCache {
       multi.HSET(`users:${currentUserId}`, 'postsCount', count);
       await multi.exec();
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }
@@ -253,7 +254,7 @@ export class PostCache extends BaseCache {
       if (!this.client.isOpen) {
         await this.client.connect();
       }
-      for (const [itemKey, itemValue] of Object.entries(dataToSave)) {
+      for(const [itemKey, itemValue] of Object.entries(dataToSave)) {
         await this.client.HSET(`posts:${key}`, `${itemKey}`, `${itemValue}`);
       }
       const multi: ReturnType<typeof this.client.multi> = this.client.multi();
@@ -266,7 +267,7 @@ export class PostCache extends BaseCache {
 
       return postReply[0];
     } catch (error) {
-      Logging.error(error);
+      log.error(error);
       throw new ServerError('Server error. Try again.');
     }
   }

@@ -3,7 +3,7 @@ import { IJWT } from './auth.mock';
 import { AuthPayload } from '@auth/interfaces/auth.interface';
 import { existingUserTwo } from '@root/mocks/user.mock';
 import mongoose from 'mongoose';
-import { IFollowerData } from '@root/features/follower/interface/follower.interface';
+import { IFollowerData } from '@follower/interfaces/follower.interface';
 
 export const followersMockRequest = (sessionData: IJWT, currentUser?: AuthPayload | null, params?: IParams) => ({
   session: sessionData,

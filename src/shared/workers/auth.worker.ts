@@ -1,22 +1,19 @@
-import { authService } from '@service/db/auth.service';
-import { systemLogs } from '@service/logger/logger';
-import Logging from '@service/logger/logging';
 import { DoneCallback, Job } from 'bull';
+import Logger from 'bunyan';
+import { config } from '@root/config';
+import { authService } from '@service/db/auth.service';
 
+const log: Logger = config.createLogger('authWorker');
 
 class AuthWorker {
   async addAuthUserToDB(job: Job, done: DoneCallback): Promise<void> {
     try {
       const { value } = job.data;
-      // Add method to send data to DB
       await authService.createAuthUser(value);
       job.progress(100);
       done(null, job.data);
-      systemLogs.info('Adding auth user to DB')
-      Logging.info('Adding auth user to DB');
     } catch (error) {
-      systemLogs.error('Error adding auth user to DB')
-      Logging.error(error);
+      log.error(error);
       done(error as Error);
     }
   }

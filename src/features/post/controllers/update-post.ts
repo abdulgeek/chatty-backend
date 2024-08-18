@@ -3,13 +3,13 @@ import { PostCache } from '@service/redis/post.cache';
 import HTTP_STATUS from 'http-status-codes';
 import { postQueue } from '@service/queues/post.queue';
 import { socketIOPostObject } from '@socket/post';
-import { joiValidation } from '@global/decorators/joi-validation';
+import { joiValidation } from '@global/decorators/joi-validation.decorators';
+import { postSchema, postWithImageSchema, postWithVideoSchema } from '@post/schemes/post.schemes';
 import { IPostDocument } from '@post/interfaces/post.interface';
 import { UploadApiResponse } from 'cloudinary';
 import { uploads, videoUpload } from '@global/helpers/cloudinary-upload';
 import { BadRequestError } from '@global/helpers/error-handler';
 import { imageQueue } from '@service/queues/image.queue';
-import { postSchema, postWithImageSchema, postWithVideoSchema } from '@post/schemas/post.schema';
 
 const postCache: PostCache = new PostCache();
 

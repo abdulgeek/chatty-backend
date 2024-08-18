@@ -1,4 +1,5 @@
-import { joiValidation } from '@global/decorators/joi-validation';
+import { joiValidation } from '@global/decorators/joi-validation.decorators';
+import { postSchema, postWithImageSchema, postWithVideoSchema } from '@post/schemes/post.schemes';
 import { Request, Response } from 'express';
 import { ObjectId } from 'mongodb';
 import HTTP_STATUS from 'http-status-codes';
@@ -10,8 +11,6 @@ import { UploadApiResponse } from 'cloudinary';
 import { uploads, videoUpload } from '@global/helpers/cloudinary-upload';
 import { BadRequestError } from '@global/helpers/error-handler';
 import { imageQueue } from '@service/queues/image.queue';
-import { postSchema, postWithImageSchema, postWithVideoSchema } from '@post/schemas/post.schema';
-
 
 const postCache: PostCache = new PostCache();
 
@@ -20,7 +19,6 @@ export class Create {
   public async post(req: Request, res: Response): Promise<void> {
     const { post, bgColor, privacy, gifUrl, profilePicture, feelings } = req.body;
     const postObjectId: ObjectId = new ObjectId();
-
     const createdPost: IPostDocument = {
       _id: postObjectId,
       userId: req.currentUser!.userId,
