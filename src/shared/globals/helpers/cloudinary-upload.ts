@@ -33,7 +33,7 @@ export function videoUpload(
       file,
       {
         resource_type: 'video',
-        chunk_size: 50000,
+        chunk_size: 50010,
         public_id,
         overwrite,
         invalidate
