@@ -22,7 +22,7 @@ import { SocketIONotificationHandler } from '@socket/notification';
 import { SocketIOImageHandler } from '@socket/image';
 import { SocketIOChatHandler } from '@socket/chat';
 
-const SERVER_PORT = 5001;
+const SERVER_PORT = 5000;
 const log: Logger = config.createLogger('server');
 
 export class ChattyServer {
